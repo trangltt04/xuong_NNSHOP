@@ -1,0 +1,130 @@
+$primaryColor: #018294;
+$secondColor: #f2ede6;
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+ul,
+li,
+ol {
+	list-style: none;
+	margin: 0;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+html {
+	font-size: 16px;
+	font-weight: 400;
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+}
+
+.flex-sb {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex-start {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.flex-end {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+header {
+	width: 100%;
+	background-color: $secondColor;
+	.header-inner {
+		height: 100%;
+	}
+	.header-right {
+		width: 70%;
+		height: 100%;
+	}
+	.header-left {
+		height: 100%;
+	}
+
+	nav ul {
+		height: 100%;
+		li {
+			margin-right: 12px;
+			a {
+				padding: 12px;
+			}
+		}
+	}
+}
+
+.btn {
+	margin: 12px;
+	padding: 24px;
+	background-color: transparent;
+	color: black;
+	transition: all ease-in-out 0.3s;
+	border-radius: 50%;
+	min-width: 140px;
+	&:hover {
+		color: transparent;
+		background-color: black;
+	}
+}
+
+main {
+	background-color: $primaryColor;
+	color: #fff;
+	.title {
+		font-size: 54px;
+		text-align: center;
+		margin-bottom: 74px;
+	}
+	.sub-title {
+		font-size: 24px;
+	}
+
+	section {
+		padding: 140px 0 0;
+	}
+
+	#sales {
+		.content {
+			text-align: center;
+			img {
+				width: 178px;
+				height: auto;
+				display: block;
+				margin: 0 auto 44px;
+			}
+		}
+	}
+
+	#how {
+		.content {
+			padding: 24px;
+		}
+	}
+
+	#benefits {
+	}
+
+	#pricing {
+	}
+}
